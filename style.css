@@ -1,0 +1,168 @@
+:root {
+
+--bg: linear-gradient(135deg,#6a5acd,#8a2be2);
+
+--card: white;
+
+--text: #333;
+
+--primary: #6a5acd;
+
+}
+
+body.dark {
+
+--bg: linear-gradient(135deg,#1e1e2f,#2b2b44);
+
+--card: #2b2b44;
+
+--text: white;
+
+--primary: #9b8cff;
+
+}
+
+body {
+
+font-family: Arial;
+
+background: var(--bg);
+
+margin: 0;
+
+color: var(--text);
+
+transition: 0.3s;
+
+}
+
+.container {
+
+width: 85%;
+
+margin: auto;
+
+padding: 20px;
+
+}
+
+.card {
+
+background: var(--card);
+
+padding: 20px;
+
+margin: 15px;
+
+border-radius: 15px;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.header {
+
+text-align: center;
+
+}
+
+.top-bar {
+
+display: flex;
+
+justify-content: space-between;
+
+margin-bottom: 10px;
+
+}
+
+.grid {
+
+display: grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+}
+
+button {
+
+padding: 8px 12px;
+
+margin: 5px;
+
+border: none;
+
+border-radius: 8px;
+
+cursor: pointer;
+
+background: var(--primary);
+
+color: white;
+
+}
+
+button:hover {
+
+opacity: 0.8;
+
+}
+
+input {
+
+padding: 8px;
+
+border-radius: 8px;
+
+border: 1px solid #ccc;
+
+}
+
+.task-input,
+.link-input,
+.timer-setting {
+
+display: flex;
+
+gap: 10px;
+
+margin-bottom: 10px;
+
+}
+
+li {
+
+list-style: none;
+
+margin: 10px 0;
+
+display: flex;
+
+justify-content: space-between;
+
+}
+
+.done {
+
+text-decoration: line-through;
+
+opacity: 0.6;
+
+}
+
+select {
+
+padding: 8px;
+
+border-radius: 8px;
+
+margin-bottom: 10px;
+
+}
+
+#links button {
+
+margin: 5px;
+
+}

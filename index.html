@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life Dashboard Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="card header">
+
+<div class="top-bar">
+
+<input id="nameInput"
+placeholder="Masukkan nama kamu">
+
+<button onclick="toggleTheme()">
+🌙 Mode
+</button>
+
+</div>
+
+<h1 id="time"></h1>
+
+<p id="date"></p>
+
+<h2 id="greeting"></h2>
+
+</div>
+
+
+<!-- GRID -->
+<div class="grid">
+
+<!-- TIMER -->
+<div class="card">
+
+<h3>Focus Timer</h3>
+
+<h1 id="timer">25:00</h1>
+
+<div class="timer-setting">
+
+<input
+id="pomodoroInput"
+type="number"
+placeholder="Menit">
+
+<button onclick="setPomodoro()">
+Set Time
+</button>
+
+</div>
+
+<div class="btn-group">
+
+<button onclick="startTimer()">
+Start
+</button>
+
+<button onclick="stopTimer()">
+Stop
+</button>
+
+<button onclick="resetTimer()">
+Reset
+</button>
+
+</div>
+
+</div>
+
+
+<!-- TASK -->
+<div class="card">
+
+<h3>Tasks</h3>
+
+<div class="task-input">
+
+<input
+id="taskInput"
+placeholder="Add a new task...">
+
+<button onclick="addTask()">
+Add
+</button>
+
+</div>
+
+<select id="sortSelect"
+onchange="sortTasks()">
+
+<option value="default">
+Sort Default
+</option>
+
+<option value="az">
+A → Z
+</option>
+
+<option value="done">
+Completed First
+</option>
+
+</select>
+
+<ul id="taskList"></ul>
+
+</div>
+
+
+<!-- LINKS -->
+<div class="card">
+
+<h3>Quick Links</h3>
+
+<div class="link-input">
+
+<input
+id="linkName"
+placeholder="Link name">
+
+<input
+id="linkURL"
+placeholder="URL">
+
+<button onclick="addLink()">
+Add Link
+</button>
+
+</div>
+
+<div id="links"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
